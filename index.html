@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Will You Be My Valentine ANNA? ❤️</title>
+
+<style>
+body {
+  text-align: center;
+  font-family: Arial;
+  margin-top: 100px;
+  background: #ffe6f0;
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 18px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#yes {
+  background: #ff4d6d;
+  color: white;
+}
+
+#no {
+  background: #ccc;
+}
+</style>
+</head>
+
+<body>
+
+<h1>ANNA Will You Be My Valentine? ❤️</h1>
+
+<button id="yes" onclick="yesClicked()">YES 💕</button>
+<button id="no" onmouseover="moveButton()">NO 😔</button>
+
+<script>
+function yesClicked() {
+  document.body.innerHTML = "<h1>NAIII❤️🥰</h1><p>Αυτό το Σάββατο 14/02/2026 6-11pm δεν ξέρω ακόμα πού.</p>";
+}
+
+function moveButton() {
+let yes = document.getElementById("yes");
+yes.style.fontSize = (parseInt(window.getComputedStyle(yes).fontSize) + 5) + "px";
+
+}
+</script>
+
+</body>
+</html>
